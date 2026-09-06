@@ -138,4 +138,4 @@ A definição de domínio e a publicação pública são uma etapa posterior. Es
 
 ## Estado da aprovação
 
-O usuário aprovou a direção visual, a casa conceitual e o escopo apresentado na conversa, autorizando o registro do documento e a preparação da implementação. Este documento consolida essas decisões para revisão antes do plano detalhado, conforme o processo de brainstorming solicitado.
+O usuário aprovou a direção visual, a casa conceitual e o escopo apresentado na conversa, autorizando o registro do documento e a preparação da implementação. O usuário revisou e aprovou este documento em 06/09/2026, autorizando o plano detalhado e a implementação.
