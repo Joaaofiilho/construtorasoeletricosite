@@ -7,41 +7,10 @@ import {
   Mail,
   MoveUpRight,
 } from 'lucide-react';
-import { contact, photos } from '@/lib/content';
+import { contact, projectTypes } from '@/lib/content';
+import { Photo } from '@/components/photo';
+import { SiteHeader, SiteFooter } from '@/components/site-navigation';
 import { Experience } from '@/components/experience';
-
-function Photo({
-  name,
-  className = '',
-  priority = false,
-}: {
-  name: keyof typeof photos;
-  className?: string;
-  priority?: boolean;
-}) {
-  const photo = photos[name];
-  return (
-    <figure className={`photo ${className}`}>
-      <div className="photo-frame">
-        <img
-          src={photo.src}
-          srcSet={photo.srcSet}
-          sizes={
-            name === 'detail'
-              ? '(max-width: 800px) 100vw, 42vw'
-              : '(max-width: 800px) 100vw, 80vw'
-          }
-          alt={photo.alt}
-          width={photo.width}
-          height={photo.height}
-          loading={priority ? 'eager' : 'lazy'}
-          fetchPriority={priority ? 'high' : 'auto'}
-        />
-      </div>
-      <figcaption>{photo.caption}</figcaption>
-    </figure>
-  );
-}
 
 export default function Home() {
   return (
@@ -50,29 +19,7 @@ export default function Home() {
         Pular para o conteúdo
       </a>
       <div className="page-shell" id="page-scroll">
-        <header className="header" id="inicio">
-          <a
-            className="wordmark"
-            href="#inicio"
-            aria-label="Soelétrico, início"
-          >
-            soelétrico<span className="brand-dot">.</span>
-            <small>CONSTRUTORA</small>
-          </a>
-          <nav aria-label="Navegação principal">
-            <a href="#servicos">O que fazemos</a>
-            <a href="#sobre">Nossa essência</a>
-            <a href="#projeto">Projeto</a>
-          </nav>
-          <a
-            className="header-contact"
-            href={contact.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vamos conversar <ArrowUpRight size={17} />
-          </a>
-        </header>
+        <SiteHeader page="home" />
         <main id="conteudo" tabIndex={-1}>
           <section className="hero" aria-labelledby="hero-title">
             <div className="hero-top">
@@ -139,40 +86,27 @@ export default function Home() {
               </div>
             </div>
             <div className="service-list">
-              {[
-                [
-                  '01',
-                  'Casas',
-                  'Espaços para viver.',
-                  'Construção de residências com cuidado na execução e nos detalhes que fazem parte do seu dia a dia.',
-                ],
-                [
-                  '02',
-                  'Obras comerciais',
-                  'Espaços para crescer.',
-                  'Execução do seu projeto comercial, com atenção aos ambientes que vão receber seu negócio.',
-                ],
-                [
-                  '03',
-                  'Galpões',
-                  'Espaços para produzir.',
-                  'Construção de galpões a partir do seu projeto, acompanhando cada etapa da execução.',
-                ],
-              ].map(([number, title, subtitle, description]) => (
-                <article className="service-row reveal" key={number}>
-                  <span className="service-number">{number}</span>
-                  <div className="service-name">
-                    <h3>{title}</h3>
-                    <span>{subtitle}</span>
-                  </div>
-                  <p>{description}</p>
-                  <MoveUpRight
-                    className="service-arrow"
-                    size={29}
-                    strokeWidth={1}
-                  />
-                </article>
-              ))}
+              {projectTypes.map(
+                ({ id, number, title, subtitle, description }) => (
+                  <a
+                    className="service-row reveal"
+                    key={id}
+                    href={`/projetos#${id}`}
+                  >
+                    <span className="service-number">{number}</span>
+                    <div className="service-name">
+                      <h3>{title}</h3>
+                      <span>{subtitle}</span>
+                    </div>
+                    <p>{description}</p>
+                    <MoveUpRight
+                      className="service-arrow"
+                      size={29}
+                      strokeWidth={1}
+                    />
+                  </a>
+                ),
+              )}
             </div>
             <p className="service-note">
               <Check size={16} /> Executamos a obra a partir do projeto de
@@ -280,13 +214,8 @@ export default function Home() {
             <Photo name="project" className="project-photo reveal" />
             <div className="project-footer reveal">
               <span>RESIDENCIAL · ÁREA DE LAZER · ACABAMENTOS</span>
-              <a
-                className="text-link"
-                href={contact.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Vamos conversar sobre o seu projeto <ArrowUpRight size={18} />
+              <a className="text-link" href="/projetos">
+                Conheça nossos projetos <ArrowUpRight size={18} />
               </a>
             </div>
           </section>
@@ -348,20 +277,7 @@ export default function Home() {
             </div>
           </section>
         </main>
-        <footer className="footer">
-          <a className="wordmark" href="#inicio">
-            soelétrico<span className="brand-dot">.</span>
-            <small>CONSTRUTORA</small>
-          </a>
-          <span>
-            Construção com cuidado.
-            <br />
-            Trairi, Ceará e região.
-          </span>
-          <a href="#inicio" className="back-top" aria-label="Voltar ao início">
-            Voltar ao início <ArrowUpRight size={16} />
-          </a>
-        </footer>
+        <SiteFooter page="home" />
       </div>
       <Experience />
     </>

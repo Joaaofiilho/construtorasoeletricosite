@@ -110,7 +110,7 @@ try {
       await page.locator('.house-progress').getAttribute('aria-valuenow'),
       '0',
     );
-    await page.getByRole('link', { name: 'Projeto', exact: true }).click();
+    await page.goto(`${origin}/#projeto`, { waitUntil: 'networkidle' });
     await page.waitForTimeout(1100);
     const pos = await page.locator('#projeto').boundingBox();
     assert.ok(pos.y >= -1 && pos.y < 100, 'Project anchor scrolls correctly');
@@ -153,7 +153,7 @@ try {
     if (name !== 'no-webgl')
       assert.equal(await page.locator('.reveal-pending').count(), 0);
     await checkLayout(page);
-    await page.getByRole('link', { name: 'Projeto', exact: true }).click();
+    await page.goto(`${origin}/#projeto`, { waitUntil: 'networkidle' });
     await page.waitForTimeout(1200);
     assert.ok(
       await page
@@ -172,7 +172,7 @@ try {
   });
   await toggle.goto(origin, { waitUntil: 'networkidle' });
   await toggle.waitForSelector('[data-mode=live]');
-  await toggle.getByRole('link', { name: 'Projeto', exact: true }).click();
+  await toggle.goto(`${origin}/#projeto`, { waitUntil: 'networkidle' });
   await toggle.waitForTimeout(1100);
   await toggle.setViewportSize({ width: 360, height: 800 });
   await toggle.waitForTimeout(500);
