@@ -58,11 +58,21 @@
   "overrides": [
     {
       "files": [
-        "app/page.tsx",
+        "components/photo.tsx",
         "components/experience.tsx"
       ],
       "rules": {
         "nextjs/no-img-element": "off"
+      }
+    },
+    {
+      "files": [
+        "app/page.tsx",
+        "app/projetos/page.tsx",
+        "components/site-navigation.tsx"
+      ],
+      "rules": {
+        "nextjs/no-html-link-for-pages": "off"
       }
     }
   ]

@@ -23,6 +23,7 @@ A exportação estática fica em `site/dist/client/`. `npm start` serve essa pas
 
 ## O que foi implementado
 
+- Página `/projetos` com casas, obras comerciais e galpões, navegação por categoria, fotografias ilustrativas e contato. Menu, serviços e destaque da inicial levam à página, com links de retorno.
 - Abertura, serviços (casas, obras comerciais e galpões), acompanhamento e acabamento, projeto concluído e contato.
 - WhatsApp com código de país e DDD, mensagem pré-preenchida revisável pelo visitante e e-mail direto.
 - Modelo procedural Three.js com cinco etapas: fundação, estrutura/paredes, cobertura, esquadrias/acabamento, paisagismo/entrega. Avança e retrocede com a rolagem e fica pronto na seção de contato.
@@ -33,11 +34,11 @@ A exportação estática fica em `site/dist/client/`. `npm start` serve essa pas
 
 ## Conteúdo e fotos
 
-Contatos e referências fotográficas: `site/lib/content.ts`. Conteúdo das seções: `site/app/page.tsx`. Estilos: `site/app/globals.css`.
+Contatos e referências fotográficas: `site/lib/content.ts`. Conteúdo compartilhado das categorias: `site/lib/content.ts`. Páginas: `site/app/page.tsx` e `site/app/projetos/page.tsx`. Estilos: `site/app/globals.css` e `site/app/projetos/projects.css`.
 
 As fotografias são **ilustrativas e não retratam obras executadas pela Soelétrico**. As legendas e o aviso da seção deixam isso explícito. A obra real é descrita somente como casa de luxo concluída com piscina ampla de lazer, sem inventar endereço, área ou autoria.
 
-Originais de 7334 × 4895, 7360 × 4912 e 7952 × 5304 pixels ficam em `site/assets/originals/`. A página usa versões WebP responsivas de 768, 1536 e 2560 pixels: imagens acima de 4K ficam preservadas, sem impor esse peso aos celulares. Autoria, licença e links estão em `site/public/images/SOURCES.md`.
+Originais das cinco fotografias, com dimensões documentadas em `SOURCES.md`, ficam em `site/assets/originals/`. A página usa versões WebP responsivas de 768, 1536 e 2560 pixels: imagens acima de 4K ficam preservadas, sem impor esse peso aos celulares. Autoria, licença e links estão em `site/public/images/SOURCES.md`.
 
 Para substituir pelas fotos reais:
 
@@ -60,9 +61,9 @@ npm run test:browser
 
 O teste de navegador requer Google Chrome instalado e a prévia em execução. Para verificar outro endereço: `TEST_URL=http://localhost:4173 npm run test:browser`. As evidências são gravadas em `site/outputs/` (ignorada pelo Git).
 
-A suíte cobre limites e reversão do progresso; computador (1440px), tablet (900px), celular (360px) e paisagem (844 × 390px); imagens, contatos, âncoras, ausência de transbordamento e separação da casa; movimento reduzido; JavaScript desabilitado; WebGL ausente e perda do contexto; manutenção do trecho de leitura ao girar o celular. A inspeção visual usa screenshots reais desses estados.
+A suíte também cobre a navegação inicial → projetos → inicial, links diretos às três categorias, fotos e rolagem da página de projetos no computador e no celular, inclusive sem JavaScript. A suíte cobre limites e reversão do progresso; computador (1440px), tablet (900px), celular (360px) e paisagem (844 × 390px); imagens, contatos, âncoras, ausência de transbordamento e separação da casa; movimento reduzido; JavaScript desabilitado; WebGL ausente e perda do contexto; manutenção do trecho de leitura ao girar o celular. A inspeção visual usa screenshots reais desses estados.
 
-O lint cobre o código da aplicação e os testes. O catálogo Shadcn e o hook não utilizados, fornecidos pelo gerador, permanecem sem alterações e fora desse lint. As imagens são otimizadas previamente para exportação estática, por isso a regra que exige servidor de imagens Next não se aplica aos dois componentes que as exibem.
+O lint cobre o código da aplicação e os testes. O catálogo Shadcn e o hook não utilizados, fornecidos pelo gerador, permanecem sem alterações e fora desse lint. As imagens são otimizadas previamente para exportação estática, por isso a regra que exige servidor de imagens Next não se aplica aos dois componentes que as exibem. A navegação entre páginas usa links nativos, preservando o carregamento completo e as âncoras no contêiner de rolagem da inicial no celular; a regra que exige navegação cliente Next fica desativada somente nos três arquivos de navegação.
 
 ## Observações técnicas
 
