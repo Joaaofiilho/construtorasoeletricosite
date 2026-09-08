@@ -5,6 +5,8 @@ const photos = [
   ['hero', 'hero-house-pool-max-8134745.jpg'],
   ['detail', 'interior-pool-max-8134753.jpg'],
   ['project', 'tropical-villa-vero-28915352.jpg'],
+  ['commercial', 'commercial-sami-19903723.jpg'],
+  ['warehouse', 'warehouse-jonathan-8556704.jpg'],
 ];
 await fs.mkdir('public/images', { recursive: true });
 for (const [name, file] of photos) {
@@ -16,4 +18,4 @@ for (const [name, file] of photos) {
       .toFile(`public/images/${name}-${width}.webp`);
   }
 }
-console.log('Prepared 9 responsive WebP images.');
+console.log(`Prepared ${photos.length * 3} responsive WebP images.`);
