@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import { ArrowDown, ArrowLeft, ArrowUpRight, Check } from 'lucide-react';
-import { Photo } from '@/components/photo';
+import { Photo, GalleryPhoto } from '@/components/photo';
 import { SiteHeader, SiteFooter } from '@/components/site-navigation';
-import { contact, projectTypes } from '@/lib/content';
+import { contact, gallery, projectId, projectTitle } from '@/lib/content';
 import './projects.css';
 
 export const metadata: Metadata = {
-  title: 'Projetos | Soelétrico — Casas, obras comerciais e galpões',
+  title: 'Casa de Alto Padrão no Ouro Verde | Projetos Soelétrico',
   description:
-    'Conheça a construção de casas, obras comerciais e galpões da Soelétrico em Trairi, Ceará e região. Do seu projeto à execução, com acompanhamento próximo.',
+    'Conheça a Casa de Alto Padrão no Ouro Verde, uma obra concluída pela Soelétrico. Veja as fotos da fachada, piscina, ambientes internos e acabamentos.',
 };
 
 export default function Projects() {
@@ -31,75 +31,70 @@ export default function Projects() {
               <h1>Projetos</h1>
             </div>
             <p>
-              Casas, espaços comerciais e galpões.
+              Uma casa, cada detalhe.
               <br />O mesmo cuidado em cada obra.
             </p>
           </div>
-          <nav className="project-types" aria-label="Tipos de projeto">
-            {projectTypes.map(({ id, number, title }) => (
-              <a key={id} href={`#${id}`} aria-label={title}>
-                <span aria-hidden="true">{number}</span>
-                {title}
-                <ArrowDown size={17} aria-hidden="true" />
-              </a>
-            ))}
+          <nav className="project-types" aria-label="Projetos disponíveis">
+            <a href={`#${projectId}`}>
+              <span>01</span>
+              {projectTitle}
+              <ArrowDown size={17} aria-hidden="true" />
+            </a>
           </nav>
-          <p className="projects-note">
-            As imagens são referências ilustrativas. Os registros reais das
-            nossas obras serão adicionados em breve.
-          </p>
         </div>
-
         <div className="projects-collection">
-          {projectTypes.map(
-            (
-              { id, number, title, subtitle, description, photo, label },
-              index,
-            ) => (
+          <section
+            className="project-category"
+            id={projectId}
+            aria-labelledby="house-title"
+          >
+            <div className="category-copy">
+              <span className="eyebrow">01 / RESIDENCIAL · OBRA CONCLUÍDA</span>
+              <h2 id="house-title">{projectTitle}</h2>
+              <p className="category-subtitle">Espaços para viver.</p>
+              <p className="category-description">
+                Uma casa construída por João Sabiá, com piscina, jardim e
+                ambientes integrados. Conheça os espaços e os detalhes de
+                acabamento desta obra.
+              </p>
+              <a className="text-link" href="#galeria">
+                Explore a galeria <ArrowDown size={18} />
+              </a>
+            </div>
+            <Photo
+              name="project"
+              className="category-photo"
+              priority
+              sizes="(max-width: 800px) 100vw, 62vw"
+            />
+          </section>
+          <section
+            id="galeria"
+            className="house-gallery"
+            aria-labelledby="gallery-title"
+          >
+            <span className="eyebrow">UM OLHAR POR CADA AMBIENTE</span>
+            <h2 id="gallery-title">Galeria da casa</h2>
+            <p>
+              43 fotos da obra concluída. Selecione uma imagem para ver em
+              tamanho maior.
+            </p>
+            {gallery.map((group) => (
               <section
-                className="project-category"
-                id={id}
-                key={id}
-                aria-labelledby={`${id}-title`}
+                className="gallery-group"
+                key={group.title}
+                aria-label={group.title}
               >
-                <div className="category-copy">
-                  <span className="eyebrow">
-                    {number} / {label}
-                  </span>
-                  <h2 id={`${id}-title`}>{title}</h2>
-                  <p className="category-subtitle">{subtitle}</p>
-                  <p className="category-description">{description}</p>
-                  {id === 'casas' && (
-                    <div className="category-featured">
-                      <span className="eyebrow">
-                        <span className="lime-dot" /> OBRA CONCLUÍDA
-                      </span>
-                      <h3>Residência de alto padrão</h3>
-                      <p>
-                        Uma casa de luxo com piscina ampla de lazer, que faz
-                        parte da história da Soelétrico. Registros reais em
-                        breve.
-                      </p>
-                    </div>
-                  )}
-                  <a
-                    className="text-link"
-                    href={contact.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Converse sobre sua obra <ArrowUpRight size={18} />
-                  </a>
+                <h3>{group.title}</h3>
+                <div className="gallery-grid">
+                  {group.photos.map((photo) => (
+                    <GalleryPhoto photo={photo} key={photo.src} />
+                  ))}
                 </div>
-                <Photo
-                  name={photo}
-                  className="category-photo"
-                  priority={index === 0}
-                  sizes="(max-width: 800px) 100vw, 62vw"
-                />
               </section>
-            ),
-          )}
+            ))}
+          </section>
         </div>
 
         <section

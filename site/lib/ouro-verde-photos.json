@@ -1,0 +1,389 @@
+[
+  {
+    "name": "foto-01",
+    "src": "/images/ouro-verde/foto-01-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-01-768.webp 768w, /images/ouro-verde/foto-01-1536.webp 1536w, /images/ouro-verde/foto-01-2560.webp 2560w",
+    "alt": "Imagem 1 de Sala de estar 1 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Sala de estar 1",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-02",
+    "src": "/images/ouro-verde/foto-02-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-02-768.webp 768w, /images/ouro-verde/foto-02-1536.webp 1536w, /images/ouro-verde/foto-02-2560.webp 2560w",
+    "alt": "Imagem 2 de Sala de estar 1 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 2 de Sala de estar 1",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-03",
+    "src": "/images/ouro-verde/foto-03-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-03-768.webp 768w, /images/ouro-verde/foto-03-1536.webp 1536w, /images/ouro-verde/foto-03-2560.webp 2560w",
+    "alt": "Imagem 3 de Sala de estar 1 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 3 de Sala de estar 1",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-04",
+    "src": "/images/ouro-verde/foto-04-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-04-768.webp 768w, /images/ouro-verde/foto-04-1536.webp 1536w, /images/ouro-verde/foto-04-2560.webp 2560w",
+    "alt": "Imagem 1 de Sala de estar 2 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Sala de estar 2",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-05",
+    "src": "/images/ouro-verde/foto-05-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-05-768.webp 768w, /images/ouro-verde/foto-05-1536.webp 1536w, /images/ouro-verde/foto-05-2560.webp 2560w",
+    "alt": "Imagem 2 de Sala de estar 2 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 2 de Sala de estar 2",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-06",
+    "src": "/images/ouro-verde/foto-06-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-06-768.webp 768w, /images/ouro-verde/foto-06-1536.webp 1536w, /images/ouro-verde/foto-06-2560.webp 2560w",
+    "alt": "Imagem 3 de Sala de estar 2 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 3 de Sala de estar 2",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-07",
+    "src": "/images/ouro-verde/foto-07-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-07-768.webp 768w, /images/ouro-verde/foto-07-1536.webp 1536w, /images/ouro-verde/foto-07-2560.webp 2560w",
+    "alt": "Imagem 4 de Sala de estar 2 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 4 de Sala de estar 2",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-08",
+    "src": "/images/ouro-verde/foto-08-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-08-768.webp 768w, /images/ouro-verde/foto-08-1536.webp 1536w, /images/ouro-verde/foto-08-2560.webp 2560w",
+    "alt": "Imagem 5 de Sala de estar 2 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 5 de Sala de estar 2",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-09",
+    "src": "/images/ouro-verde/foto-09-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-09-768.webp 768w, /images/ouro-verde/foto-09-1536.webp 1536w, /images/ouro-verde/foto-09-2560.webp 2560w",
+    "alt": "Imagem 1 de Cozinha completa — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Cozinha completa",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-10",
+    "src": "/images/ouro-verde/foto-10-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-10-768.webp 768w, /images/ouro-verde/foto-10-1536.webp 1536w, /images/ouro-verde/foto-10-2560.webp 2560w",
+    "alt": "Imagem 2 de Cozinha completa — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 2 de Cozinha completa",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-11",
+    "src": "/images/ouro-verde/foto-11-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-11-768.webp 768w, /images/ouro-verde/foto-11-1536.webp 1536w, /images/ouro-verde/foto-11-2560.webp 2560w",
+    "alt": "Imagem 1 de Área de jantar — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Área de jantar",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-12",
+    "src": "/images/ouro-verde/foto-12-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-12-768.webp 768w, /images/ouro-verde/foto-12-1536.webp 1536w, /images/ouro-verde/foto-12-2560.webp 2560w",
+    "alt": "Imagem 2 de Área de jantar — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 2 de Área de jantar",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-13",
+    "src": "/images/ouro-verde/foto-13-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-13-768.webp 768w, /images/ouro-verde/foto-13-1536.webp 1536w, /images/ouro-verde/foto-13-2560.webp 2560w",
+    "alt": "Imagem 1 de Quarto 1 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Quarto 1",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-14",
+    "src": "/images/ouro-verde/foto-14-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-14-768.webp 768w, /images/ouro-verde/foto-14-1536.webp 1536w, /images/ouro-verde/foto-14-2560.webp 2560w",
+    "alt": "Imagem 2 de Quarto 1 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 2 de Quarto 1",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-15",
+    "src": "/images/ouro-verde/foto-15-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-15-768.webp 768w, /images/ouro-verde/foto-15-1536.webp 1536w, /images/ouro-verde/foto-15-2560.webp 2560w",
+    "alt": "Imagem 3 de Quarto 1 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 3 de Quarto 1",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-16",
+    "src": "/images/ouro-verde/foto-16-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-16-768.webp 768w, /images/ouro-verde/foto-16-1536.webp 1536w, /images/ouro-verde/foto-16-2560.webp 2560w",
+    "alt": "Imagem 4 de Quarto 1 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 4 de Quarto 1",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-17",
+    "src": "/images/ouro-verde/foto-17-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-17-768.webp 768w, /images/ouro-verde/foto-17-1536.webp 1536w, /images/ouro-verde/foto-17-2560.webp 2560w",
+    "alt": "Imagem 1 de Quarto 2 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Quarto 2",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-18",
+    "src": "/images/ouro-verde/foto-18-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-18-768.webp 768w, /images/ouro-verde/foto-18-1536.webp 1536w, /images/ouro-verde/foto-18-2560.webp 2560w",
+    "alt": "Imagem 1 de Quarto 3 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Quarto 3",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-19",
+    "src": "/images/ouro-verde/foto-19-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-19-768.webp 768w, /images/ouro-verde/foto-19-1536.webp 1536w, /images/ouro-verde/foto-19-2560.webp 2560w",
+    "alt": "Imagem 1 de Quarto 4 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Quarto 4",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-20",
+    "src": "/images/ouro-verde/foto-20-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-20-768.webp 768w, /images/ouro-verde/foto-20-1536.webp 1536w, /images/ouro-verde/foto-20-2560.webp 2560w",
+    "alt": "Imagem 1 de Quarto 5 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Quarto 5",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-21",
+    "src": "/images/ouro-verde/foto-21-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-21-768.webp 768w, /images/ouro-verde/foto-21-1536.webp 1536w, /images/ouro-verde/foto-21-2560.webp 2560w",
+    "alt": "Imagem 1 de Banheiro completo 1 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Banheiro completo 1",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-22",
+    "src": "/images/ouro-verde/foto-22-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-22-768.webp 768w, /images/ouro-verde/foto-22-1536.webp 1536w, /images/ouro-verde/foto-22-2560.webp 2560w",
+    "alt": "Imagem 2 de Banheiro completo 1 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 2 de Banheiro completo 1",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-23",
+    "src": "/images/ouro-verde/foto-23-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-23-768.webp 768w, /images/ouro-verde/foto-23-1536.webp 1536w, /images/ouro-verde/foto-23-2560.webp 2560w",
+    "alt": "Imagem 1 de Banheiro completo 2 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Banheiro completo 2",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-24",
+    "src": "/images/ouro-verde/foto-24-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-24-768.webp 768w, /images/ouro-verde/foto-24-1536.webp 1536w, /images/ouro-verde/foto-24-2560.webp 2560w",
+    "alt": "Imagem 1 de Banheiro completo 3 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Banheiro completo 3",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-25",
+    "src": "/images/ouro-verde/foto-25-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-25-768.webp 768w, /images/ouro-verde/foto-25-1536.webp 1536w, /images/ouro-verde/foto-25-2560.webp 2560w",
+    "alt": "Imagem 2 de Banheiro completo 3 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 2 de Banheiro completo 3",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-26",
+    "src": "/images/ouro-verde/foto-26-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-26-768.webp 768w, /images/ouro-verde/foto-26-1536.webp 1536w, /images/ouro-verde/foto-26-2560.webp 2560w",
+    "alt": "Imagem 1 de Banheiro completo 4 — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Banheiro completo 4",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-27",
+    "src": "/images/ouro-verde/foto-27-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-27-768.webp 768w, /images/ouro-verde/foto-27-1536.webp 1536w, /images/ouro-verde/foto-27-2560.webp 2560w",
+    "alt": "Imagem 1 de Jardim — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Jardim",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-28",
+    "src": "/images/ouro-verde/foto-28-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-28-768.webp 768w, /images/ouro-verde/foto-28-1536.webp 1536w, /images/ouro-verde/foto-28-2560.webp 2560w",
+    "alt": "quadra de vôlei — Casa de Alto Padrão no Ouro Verde",
+    "caption": "quadra de vôlei",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-29",
+    "src": "/images/ouro-verde/foto-29-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-29-768.webp 768w, /images/ouro-verde/foto-29-1536.webp 1536w, /images/ouro-verde/foto-29-2560.webp 2560w",
+    "alt": "Imagem 1 de Terraço — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Terraço",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-30",
+    "src": "/images/ouro-verde/foto-30-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-30-768.webp 768w, /images/ouro-verde/foto-30-1536.webp 1536w, /images/ouro-verde/foto-30-2560.webp 2560w",
+    "alt": "Imagem 2 de Terraço — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 2 de Terraço",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-31",
+    "src": "/images/ouro-verde/foto-31-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-31-768.webp 768w, /images/ouro-verde/foto-31-1536.webp 1536w, /images/ouro-verde/foto-31-2560.webp 2560w",
+    "alt": "Imagem 3 de Terraço — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 3 de Terraço",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-32",
+    "src": "/images/ouro-verde/foto-32-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-32-768.webp 768w, /images/ouro-verde/foto-32-1536.webp 1536w, /images/ouro-verde/foto-32-2560.webp 2560w",
+    "alt": "Imagem 4 de Terraço — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 4 de Terraço",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-33",
+    "src": "/images/ouro-verde/foto-33-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-33-768.webp 768w, /images/ouro-verde/foto-33-1536.webp 1536w, /images/ouro-verde/foto-33-2560.webp 2560w",
+    "alt": "Imagem 5 de Terraço — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 5 de Terraço",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-34",
+    "src": "/images/ouro-verde/foto-34-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-34-768.webp 768w, /images/ouro-verde/foto-34-1536.webp 1536w, /images/ouro-verde/foto-34-2560.webp 2560w",
+    "alt": "Imagem 1 de Exterior — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Exterior",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-35",
+    "src": "/images/ouro-verde/foto-35-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-35-768.webp 768w, /images/ouro-verde/foto-35-1536.webp 1536w, /images/ouro-verde/foto-35-2560.webp 2560w",
+    "alt": "Imagem 2 de Exterior — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 2 de Exterior",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-36",
+    "src": "/images/ouro-verde/foto-36-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-36-768.webp 768w, /images/ouro-verde/foto-36-1536.webp 1536w, /images/ouro-verde/foto-36-2560.webp 2560w",
+    "alt": "Imagem 3 de Exterior — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 3 de Exterior",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-37",
+    "src": "/images/ouro-verde/foto-37-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-37-768.webp 768w, /images/ouro-verde/foto-37-1536.webp 1536w, /images/ouro-verde/foto-37-2560.webp 2560w",
+    "alt": "Imagem 1 de Piscina — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Piscina",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-38",
+    "src": "/images/ouro-verde/foto-38-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-38-768.webp 768w, /images/ouro-verde/foto-38-1536.webp 1536w, /images/ouro-verde/foto-38-2560.webp 2560w",
+    "alt": "Imagem 2 de Piscina — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 2 de Piscina",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-39",
+    "src": "/images/ouro-verde/foto-39-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-39-768.webp 768w, /images/ouro-verde/foto-39-1536.webp 1536w, /images/ouro-verde/foto-39-2560.webp 2560w",
+    "alt": "Imagem 3 de Piscina — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 3 de Piscina",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-41",
+    "src": "/images/ouro-verde/foto-41-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-41-768.webp 768w, /images/ouro-verde/foto-41-1536.webp 1536w, /images/ouro-verde/foto-41-2560.webp 2560w",
+    "alt": "Imagem 1 de Fotos adicionais — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 1 de Fotos adicionais",
+    "width": 1536,
+    "height": 1152
+  },
+  {
+    "name": "foto-43",
+    "src": "/images/ouro-verde/foto-43-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-43-768.webp 768w, /images/ouro-verde/foto-43-1536.webp 1536w, /images/ouro-verde/foto-43-2560.webp 2560w",
+    "alt": "Imagem 3 de Fotos adicionais — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 3 de Fotos adicionais",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-44",
+    "src": "/images/ouro-verde/foto-44-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-44-768.webp 768w, /images/ouro-verde/foto-44-1536.webp 1536w, /images/ouro-verde/foto-44-2560.webp 2560w",
+    "alt": "Imagem 4 de Fotos adicionais — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 4 de Fotos adicionais",
+    "width": 1536,
+    "height": 2048
+  },
+  {
+    "name": "foto-45",
+    "src": "/images/ouro-verde/foto-45-1536.webp",
+    "srcSet": "/images/ouro-verde/foto-45-768.webp 768w, /images/ouro-verde/foto-45-1536.webp 1536w, /images/ouro-verde/foto-45-2560.webp 2560w",
+    "alt": "Imagem 5 de Fotos adicionais — Casa de Alto Padrão no Ouro Verde",
+    "caption": "Imagem 5 de Fotos adicionais",
+    "width": 1536,
+    "height": 2048
+  }
+]

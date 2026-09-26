@@ -2,6 +2,7 @@ import { chromium, expect } from '@playwright/test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 
+const projectId = 'casa-de-alto-padrao-no-ouro-verde';
 const origin = process.env.TEST_URL ?? 'http://localhost:3000';
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
 await fs.mkdir('outputs', { recursive: true });
@@ -37,7 +38,7 @@ try {
       .getByRole('link', { name: 'Projetos', exact: true });
     await expect(projectsLink).toBeVisible();
     await projectsLink.click();
-    await expect(page).toHaveURL(`${origin}/projetos`);
+    await expect(page).toHaveURL(`${origin}/projetos#${projectId}`);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(
       'Projetos',
     );
@@ -46,37 +47,40 @@ try {
       page.getByRole('link', { name: 'Projetos', exact: true }),
     ).toHaveAttribute('aria-current', 'page');
 
-    for (const [id, title] of [
-      ['casas', 'Casas'],
-      ['obras-comerciais', 'Obras comerciais'],
-      ['galpoes', 'Galpões'],
-    ]) {
-      await page
-        .getByRole('navigation', { name: 'Tipos de projeto' })
-        .getByRole('link', { name: title, exact: true })
-        .click();
-      const section = page.locator(`#${id}`);
-      await expect(
-        section.getByRole('heading', { name: title, exact: true }),
-      ).toBeVisible();
-      await expect(section).toBeInViewport();
-      await expect(section.locator('figcaption')).toContainText(
-        'Imagem ilustrativa',
-      );
+    const section = page.locator(`#${projectId}`);
+    await expect(
+      section.getByRole('heading', {
+        name: 'Casa de Alto Padrão no Ouro Verde',
+        exact: true,
+      }),
+    ).toBeVisible();
+    await expect(section).toBeInViewport();
+    await expect(page.locator('#obras-comerciais, #galpoes')).toHaveCount(0);
+    assert.doesNotMatch(
+      await page.locator('main').innerText(),
+      /ilustrativ|registros reais.*breve/i,
+    );
+    const images = page.locator('.gallery-grid img');
+    await expect(images).toHaveCount(43);
+    for (const img of await images.all()) {
+      await img.scrollIntoViewIfNeeded();
       await expect
-        .poll(() =>
-          section
-            .locator('img')
-            .evaluate((img) => img.complete && img.naturalWidth > 0),
-        )
+        .poll(() => img.evaluate((el) => el.complete && el.naturalWidth > 0))
         .toBe(true);
-      assert.equal(
-        await page.evaluate(
-          () => document.documentElement.scrollWidth > innerWidth,
-        ),
-        false,
-      );
     }
+    const firstPhoto = page.locator('.gallery-grid a').first();
+    const popupPromise = page.waitForEvent('popup');
+    await firstPhoto.click();
+    const popup = await popupPromise;
+    await popup.waitForLoadState();
+    assert.match(popup.url(), /images\/ouro-verde\/foto-30-1536.webp/);
+    await popup.close();
+    assert.equal(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth > innerWidth,
+      ),
+      false,
+    );
 
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
     await page.screenshot({
@@ -88,7 +92,7 @@ try {
       .getByRole('link', { name: 'Voltar à página inicial', exact: true })
       .click();
     await expect(page).toHaveURL(`${origin}/`);
-    for (const id of ['casas', 'obras-comerciais', 'galpoes']) {
+    for (const id of [projectId]) {
       await page.locator(`.service-list a[href="/projetos#${id}"]`).click();
       await expect(page).toHaveURL(`${origin}/projetos#${id}`);
       await expect(page.locator(`#${id}`)).toBeInViewport();
@@ -97,11 +101,11 @@ try {
     await page
       .getByRole('link', { name: 'Conheça nossos projetos', exact: true })
       .click();
-    await expect(page).toHaveURL(`${origin}/projetos`);
+    await expect(page).toHaveURL(`${origin}/projetos#${projectId}`);
     assert.deepEqual(errors, [], 'No browser runtime errors');
     await page.close();
     console.log(
-      `${name}: project navigation, categories, photos, return links and layout passed`,
+      `${name}: project navigation, 43 real photos, enlargement, return links and layout passed`,
     );
   }
 } finally {
