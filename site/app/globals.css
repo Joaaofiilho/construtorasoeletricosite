@@ -1156,15 +1156,18 @@ p {
     overflow: hidden;
   }
   .page-shell {
-    height: calc(100svh - 122px);
+    height: 100svh;
+    padding-bottom: 122px;
     overflow-y: auto;
     overflow-x: clip;
     scroll-behavior: smooth;
     scroll-padding-top: 25px;
-    scroll-padding-bottom: 25px;
+    scroll-padding-bottom: 147px;
   }
   .build-rail {
     display: block;
+    /* Let native scrolling reach the page beneath this decorative banner. */
+    pointer-events: none;
     position: fixed;
     top: auto;
     bottom: 0;

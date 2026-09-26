@@ -1,5 +1,5 @@
 import { ArrowUpRight } from 'lucide-react';
-import { contact } from '@/lib/content';
+import { contact, projectHref } from '@/lib/content';
 
 type NavigationProps = { page: 'home' | 'projects' };
 
@@ -20,7 +20,7 @@ export function SiteHeader({ page }: NavigationProps) {
         <a href={`${home}#servicos`}>O que fazemos</a>
         <a href={`${home}#sobre`}>Nossa essência</a>
         <a
-          href="/projetos"
+          href={page === 'home' ? projectHref : '/projetos'}
           aria-current={page === 'projects' ? 'page' : undefined}
         >
           Projetos

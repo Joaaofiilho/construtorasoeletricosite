@@ -7,7 +7,12 @@ import {
   Mail,
   MoveUpRight,
 } from 'lucide-react';
-import { contact, projectTypes } from '@/lib/content';
+import {
+  contact,
+  projectTypes,
+  projectHref,
+  projectTitle,
+} from '@/lib/content';
 import { Photo } from '@/components/photo';
 import { SiteHeader, SiteFooter } from '@/components/site-navigation';
 import { Experience } from '@/components/experience';
@@ -87,11 +92,11 @@ export default function Home() {
             </div>
             <div className="service-list">
               {projectTypes.map(
-                ({ id, number, title, subtitle, description }) => (
+                ({ id, href, number, title, subtitle, description }) => (
                   <a
                     className="service-row reveal"
                     key={id}
-                    href={`/projetos#${id}`}
+                    href={href}
                   >
                     <span className="service-number">{number}</span>
                     <div className="service-name">
@@ -198,23 +203,16 @@ export default function Home() {
               </div>
             </div>
             <div className="project-info reveal">
-              <h3>Residência de alto padrão</h3>
+              <h3>{projectTitle}</h3>
               <p>
-                Uma casa de luxo com piscina ampla de lazer. Um projeto
+                Uma casa de alto padrão com piscina ampla de lazer. Um projeto
                 concluído que faz parte da história da Soelétrico.
-              </p>
-            </div>
-            <div className="reference-label reveal">
-              <span>REFERÊNCIA VISUAL</span>
-              <p>
-                As fotos abaixo são ilustrativas. Em breve, os registros reais
-                da nossa obra estarão aqui.
               </p>
             </div>
             <Photo name="project" className="project-photo reveal" />
             <div className="project-footer reveal">
               <span>RESIDENCIAL · ÁREA DE LAZER · ACABAMENTOS</span>
-              <a className="text-link" href="/projetos">
+              <a className="text-link" href={projectHref}>
                 Conheça nossos projetos <ArrowUpRight size={18} />
               </a>
             </div>

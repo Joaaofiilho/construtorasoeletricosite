@@ -41,7 +41,7 @@ async function checkLayout(page) {
       shellOverflow: shell.scrollWidth > shell.clientWidth + 1,
       overlap:
         innerWidth <= 800
-          ? rect.bottom > rail.top + 1
+          ? parseFloat(getComputedStyle(shell).paddingBottom) < rail.height
           : rect.right > rail.left + 1,
     };
   });

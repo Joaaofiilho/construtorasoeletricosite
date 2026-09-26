@@ -35,3 +35,27 @@ export function Photo({
     </figure>
   );
 }
+
+export function GalleryPhoto({ photo }: { photo: (typeof photos)['hero'] }) {
+  return (
+    <a
+      href={photo.src}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Ampliar: ${photo.alt} (abre em nova aba)`}
+    >
+      <figure>
+        <img
+          src={photo.src}
+          srcSet={photo.srcSet}
+          sizes="(max-width: 600px) 90vw, (max-width: 1000px) 45vw, 30vw"
+          alt={photo.alt}
+          width={photo.width}
+          height={photo.height}
+          loading="lazy"
+        />
+        <figcaption>{photo.caption}</figcaption>
+      </figure>
+    </a>
+  );
+}
